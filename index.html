@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florist Flowers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_logo">
+                <img src="./images/logo-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="topnav">
+                <div class="right-nav">
+                    <a href="#burger-menu" class="burger-menu" onclick="menuToggle()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="topnav-menu" id="burgerMenu" style="height:0rem;">
+                    <div>
+                        <ul id="list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="items">
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-search"></i> </a>
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-user"></i></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <section>
+            <section class="hero">
+                <video autoplay loop muted>
+                    <source src="images/vid2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Welcome to Our Website</h1>
+                    <p>FLOWERS THAT MAKE YOU HAPPY</p>
+                    <a href="#shop" class="btn">Buy Now</a>
+                </div>
+            </section>
+            <div id="category" class="category">
+                <h4 class="review-header">- The Categories</h4>
+                <h1>Browse by Category</h1>
+                <div class="category_button">
+                    <button class="btn-circle"><i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn-circle"><i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <ul class="category_list">
+                    <li>
+                        <button class="button">
+                            <i class="fas fa-shopping-basket"></i>
+                            <p>On Sale</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <p>Featured</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-brands fa-mixer"></i>
+                            <p>Mixed Bouquets</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-solid fa-fan"></i>
+                            <p>One of a kind</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-solid fa-leaf"></i>
+                            <p>Seasonal</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-brands fa-pagelines"></i>
+                            <p>Plants</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-solid fa-fire"></i>
+                            <p>On Sale</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button">
+                            <i class="fa-solid fa-gift"></i>
+                            <p>Food, drink and gift</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <h4>- Our Products</h4>
+                <div class="flex">
+                    <h1>Explore our Flowers</h1>
+                </div>
+                <div class="previews">
+                    <div class="preview preview1 flex">
+                        <a class="del"><i class="fa-solid fa-x"></i></a>
+                        <div class="left">
+                            <div class="big-image">
+                                <img class="mainImage" src="images/baby1.jpg" alt="Big Product Image">
+                            </div>
+                            <!-- Small Images (Thumbnails) -->
+                            <div class="thumbnails">
+                                <img class="thumbnail" src="images/baby1.jpg" alt="Thumbnail 1">
+                                <img class="thumbnail" src="images/baby2.jpg" alt="Thumbnail 2">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h1>Baby Flower</h1>
+                            <div class="flex yellow">
+                                <h4>BRIGHT</h4>
+                                <h5>$100</h5>
+                                <h3>~ $80</h3>
+                            </div>
+                            
+                            <h4 class="added">Added to Cart</h4>
+                            <div class=" cart flex">
+                                <button class="btnadd">Add to Cart</button>
+                                <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                                <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="preview preview2 flex">
+                        <a class="del"><i class="fa-solid fa-x"></i></a>
+                        <div class="left">
+                            <div class="big-image">
+                                <img class="mainImage" src="images/cc1.jpg" alt="Big Product Image">
+                            </div>
+                            <!-- Small Images (Thumbnails) -->
+                            <div class="thumbnails">
+                                <img class="thumbnail" src="images/cc1.jpg" alt="Thumbnail 1">
+                                <img class="thumbnail" src="images/cc2.jpg" alt="Thumbnail 2">
+                                <img class="thumbnail" src="images/cc3.jpg" alt="Thumbnail 2">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h1>Carnation Flower</h1>
+                            <div class="flex blue">
+                                <h4>BEAUTY</h4>
+                                <h5>$100</h5>
+                                <h3>~ $50</h3>
+                            </div>
+                            <h4 class="added">Added to Cart</h4>
+                            <div class=" cart flex">
+                                <button class="btnadd">Add to Cart</button>
+                                <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                                <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="preview preview3 flex">
+                        <a class="del"><i class="fa-solid fa-x"></i></a>
+                        <div class="left">
+                            <div class="big-image">
+                                <img class="mainImage" src="images/ctc1.jpg" alt="Big Product Image">
+                            </div>
+                            <!-- Small Images (Thumbnails) -->
+                            <div class="thumbnails">
+                                <img class="thumbnail" src="images/ctc1.jpg" alt="Thumbnail 1">
+                                <img class="thumbnail" src="images/ctc2.jpg" alt="Thumbnail 2">
+                                <img class="thumbnail" src="images/ctc3.jpg" alt="Thumbnail 2">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h1>Hydrangea Flower</h1>
+                            <div class="flex pink">
+                                <h4>MYSTERY</h4>
+                                <h3>~ $60</h3>
+                            </div>
+                            
+                            <h4 class="added">Added to Cart</h4>
+                            <div class=" cart flex">
+                                <button class="btnadd">Add to Cart</button>
+                                <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                                <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="preview preview4 flex">
+                        <a class="del"><i class="fa-solid fa-x"></i></a>
+                        <div class="left">
+                            <div class="big-image">
+                                <img class="mainImage" src="images/cuc1.jpg" alt="Big Product Image">
+                            </div>
+                            <!-- Small Images (Thumbnails) -->
+                            <div class="thumbnails">
+                                <img class="thumbnail" src="images/cuc1.jpg" alt="Thumbnail 1">
+                                <img class="thumbnail" src="images/cuc2.jpg" alt="Thumbnail 2">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h1>Daisy Flower</h1>
+                            <div class="flex blue">
+                                <h4>PROSPERITY</h4>
+                                <h3>~ $59</h3>
+                            </div>
+                            
+                            <h4 class="added">Added to Cart</h4>
+                            <div class=" cart flex">
+                                <button class="btnadd">Add to Cart</button>
+                                <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                                <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="products flex">
+                        <div class="product product1">
+                            <img src="images/baby1.jpg">
+                            <h3>Baby Flower</h3>
+                            <div class="flex yellow">
+                                <div></div>
+                                <h4>BRIGHT</h4>
+                                <h5>$100</h5>
+                                <h3>~ $80</h3>
+                                <div></div>
+                            </div>
+                            <div class="sale">20% OFF</div>
+                        </div>
+                        <div class="product product2">
+                            <img src="images/cc1.jpg">
+                            <h3>Carnation Flower</h3>
+                            <div class="flex blue">
+                                <div></div>
+                                <h4>BEAUTY</h4>
+                                <h5>$100</h5>
+                                <h3>~ $50</h3>
+                                <div></div>
+                                <div class="sale">50% OFF</div>
+                            </div>
+                        </div>
+                        <div class="product product3">
+                            <img src="images/ctc1.jpg">
+                            <h3>Hydrangea Flower</h3>
+                            <div class="flex pink">
+                                <div></div>
+                                <h4>MYSTERY</h4>
+                                <h3>~ $60</h3>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="product product4">
+                            <img src="images/cuc1.jpg">
+                            <h3>Daisy Flower</h3>
+                            <div class="flex green">
+                                <div></div>
+                                <h4>PROSPERITY</h4>
+                                <h3>~ $59</h3>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="viewall">View All</button>
+            </nav>
+            <a href="javascript:;" class="up"><i class="fa-solid fa-arrow-up"></i></a>
+
+            <div id="about-us" class="about-us">
+                <div class="about-us_item">
+                    <div class="about-us_item_title">
+                        <h4 class="review-header">-Why us</h4>
+                        <h1>Why People Choose Us</h1>
+                    </div>
+                    <div class="about-us_content">
+                        <div class="about-us_icon">
+                            <button class="btn-circle"><i class="fas fa-check"></i></button>
+                            <h2>Easy Returns</h2>
+                            <p>
+                                Our return policy is simple and that is why customers love our shop.
+                            </p>
+                        </div>
+                        <div class="about-us_icon">
+                            <button class="btn-circle"><i class="fas fa-headset"></i></button>
+
+                            <h2>Customer Service</h2>
+                            <p>
+                                We offer amazing customer service no matter what happens.
+                            </p>
+                        </div>
+                        <div class="about-us_icon">
+                            <button class="btn-circle"><i class="fas fa-star"></i></button>
+                            <h2>High Quality</h2>
+                            <p>
+                                All of our products go through very strict inspection before we dispatch them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-wrapper">
+                    <div class="review-container">
+                        <h4 class="review-header">- Our Reviews</h4>
+                        <h1 class="review-title">What our Customers are Saying</h1>
+                        <div class="review-content">
+                            <div class="review" id="review-1" style="display: flex;">
+                                <img src="./images/ava1.jpg" alt="Profile Image" class="review-img">
+                                <div class="review-text">
+                                    <h3>Amy Smith</h3>
+                                    <p>This is the best website I have ordered something from. I highly recommend.</p>
+                                </div>
+                            </div>
+                            <div class="review" id="review-2" style="display: none;">
+                                <img src="./images/ava2.jpg" alt="Profile Image" class="review-img">
+                                <div class="review-text">
+                                    <h3>John Doe</h3>
+                                    <p>Excellent service and great quality products. Will definitely buy again!</p>
+                                </div>
+                            </div>
+                            <div class="review" id="review-3" style="display: none;">
+                                <img src="./images/ava3.jpg" alt="Profile Image" class="review-img">
+                                <div class="review-text">
+                                    <h3>Jane Roe</h3>
+                                    <p>A wonderful experience from start to finish. Highly satisfied!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <button class="nav-button" id="prev">&#8249;</button>
+                            <button class="nav-button" id="next">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <nav>
+                    <h4>- Our Blog</h4>
+                    <div class="blogs">
+                        <h1>Check Out our Blog</h1>
+                        <div class="flex blog">
+                            <div class="left">
+                                <img src="images/left1.jpg">
+                                <h3>Guide to Choosing and Preserving Fresh Flowers</h3>
+                                <h4>TOP TIPS</h4>
+                            </div>
+                            <div class="right">
+                                <img src="images/right1.jpg" alt="">
+                                <h3>Trends in Modern Flower Decor</h3>
+                                <h4>NEW IN</h4>
+                            </div>
+                        </div>
+                        <div class="flex blog">
+                            <div class="left">
+                                <img src="images/left2.jpg" />
+                                <h3>How to Use Flowers</h3>
+                                <h4>HOW TO</h4>
+                            </div>
+                            <div class="right">
+                                <img src="images/right2.jpg">
+                                <h3>Effectively Starting and Managing a Flower Shop</h3>
+                                <h4>TOP TIPS</h4>
+                            </div>
+                        </div>
+                        <div class="flex blog">
+                            <div class="left">
+                                <img src="images/left3.jpg">
+                                <h3>The Meaning of Gifting Flowers</h3>
+                                <h4>BESTSELLERS</h4>
+                            </div>
+                            <div class="right">
+                                <img src="images/right3.jpg">
+                                <h3>Popular Flower Varieties and Their Significance</h3>
+                                <h4>TOP TIPS</h4>
+                            </div>
+                        </div>
+                        <button class="viewall2">View All</button>
+                    </div>
+            </div>
+            </nav>
+            <nav class="letter">
+                <h4>- Our Newsletter</h4>
+                <h1>Sign Up to our Newsletter</h1>
+                <div class="input">
+                    <input class="Email" placeholder="Your Email">
+                    <textarea class="feedback" placeholder="How can we help you?"></textarea>
+                    <p class="success">Success! Thank for your feedback!
+                    <p></p>
+                    <button class="submit">Submit</button>
+
+                </div>
+            </nav>
+            <footer>
+                <div class="footer-content">
+                  <div class="footer-content1">
+                    <div class="logo">
+                      <img src="./images/logo-removebg-preview.png" alt="logo"/>
+                    </div>
+                    <div class="copyright">
+                      <p>&copy; 2024 - All rights reserved </p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="settings-icon">
+                        <a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+                  </div>
+              
+                  <div>
+                    <h3>Categories</h3>
+                    <ul>
+                      <li>On Sale</li>
+                      <li>Fetured</li>
+                      <li>Mixed Bouquets</li>
+                      <li>One of a kind</li>
+                      <li>Special Occasions</li>
+                      <li>Seasonal</li>
+                      <li>Plants</li>
+                      <li>Food, drinks and gifts</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Legal</h3>
+                    <ul>
+                      <li>Terms of Service</li>
+                      <li>Privacy Policy</li>
+                      <li>Return Policy</li>
+                      <li>Shipping</li>
+                      <li>Data Protection</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Company</h3>
+                    <ul>
+                      <li>About</li>
+                      <li>Team</li>
+                      <li>Contact</li>
+                      <li>Careers</li>
+                      <li>Vision</li>
+                      <li>Culture</li>
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+</body>
+
+</html>

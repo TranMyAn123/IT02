@@ -1,0 +1,825 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 40px 60px;
+}
+/* General Navbar Styles */
+/* General Navbar Styles */
+.nav {
+  overflow: hidden;
+  background: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav_logo img {
+  width: 200px;
+  height: auto;
+  margin-left: 10px;
+  justify-items: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background: none !important;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav button {
+  border: none;
+  cursor: pointer;
+}
+
+.topnav a {
+  color: var(--clr-nav-color);
+  text-align: center;
+  padding: 0.09rem 0.30rem;
+  text-decoration: none;
+  font-size: 1.063rem;
+}
+
+.topnav a:hover {
+  color: var(--hover-nav);
+}
+
+.topnav a.active {
+  color: var(--selected-nav-page);
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.nav_ultis {
+  font-size: 25px;
+  padding: 10px;
+  color: black;
+}
+.nav-icon {
+  /* Navigation Icon Sizing - SVG Only */
+  width: 2em;
+  height: 2em;
+  padding: 0.09rem 0.15rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.topnav-menu {
+  width: 100%;
+  overflow: hidden;
+  height: 0; /* Initial height is 0 */
+  transition: height 0.5s ease; /* Smooth transition for height */
+  background-color: white; /* Adjust based on your design */
+  padding: 0;
+}
+
+.topnav-menu ul {
+  float: right;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.topnav-menu a {
+  color: var(--clr-nav-color);
+  text-align: center;
+  padding: 0.7rem; /* Increase padding for better spacing */
+  text-decoration: none;
+  font-size: 1.063rem;
+  display: block;
+}
+
+.topnav-menu a:hover {
+  color: var(--hover-nav);
+  background-color: #f1f1f1; /* Add background change on hover */
+}
+
+.burger-menu {
+  width: 1.875rem;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 1.875rem;
+  height: 0.25rem;
+  background-color: var(--clr-nav-color);
+  margin: 0.313rem 0;
+  border-radius: 1.563rem;
+  transition: all 0.3s ease;
+}
+
+.burger-menu:hover div {
+  background-color: var(--hover-nav);
+}
+
+
+
+
+
+/* hero */
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url('./images/pexels-iriser-1414042.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.content {
+  color: #fff;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: textFadeIn 2s ease-in-out;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: textFadeIn 2s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color:lightsalmon;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes textFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.content {
+    position: relative;
+    z-index: 1; /* Place content above the overlay */
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+/* category */
+.category .category_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.btn-circle {
+    background-color:#F6F7FB;
+    border: none;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* Add more styling as needed */
+}
+.btn-circle:hover {
+    background-color: #EDEFF4;
+}
+.btn-circle i {
+    font-size: 1.2rem;
+    /* Adjust icon size as needed */
+}
+
+.btn-circle p{
+    margin-top: 80px;
+}
+
+
+/* Đặt lại kiểu mặc định cho danh sách */
+ul {
+    list-style: none;
+}
+
+/* Lưới danh sách các thành phần */
+.category_list {
+    display: flex;
+    gap: 140px; /* Khoảng cách giữa các ô vuông */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Kiểu nút */
+.button {
+    width: 100px; /* Kích thước ô vuông */
+    height: 100px;
+    border-radius: 10px; /* Bo góc */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7FB; /* Màu nền */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-direction: column; /* Căn giữa theo chiều dọc */
+    
+}
+
+/* Hiệu ứng hover */
+.button:hover {
+    background-color: #EDEFF4;
+}
+
+/* Kiểu biểu tượng */
+.button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kiểu văn bản */
+.button p {
+    font-size: 16px;
+    margin: 0;
+}
+/*explore*/
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+:root{
+  --p: 45px;
+}
+
+nav h4:first-child{
+  font-style: italic;
+  color: rgba(55, 111, 231, 0.808);
+}
+h1{
+  margin: 0;
+  font-size: 50px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: var(--p);
+}
+h5{
+  font-size: 20px;
+  color: grey;
+  text-decoration: line-through;
+}
+nav{
+  padding: 50px;
+  
+}
+.products{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.product{
+  width: calc(20% - 5px);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  border-radius: var(--p);
+}
+.product:hover{
+  transform: scale(1.2);
+  background-color: gainsboro;
+  z-index: 999;
+  transition-duration: 0.5s;
+}
+.product img{
+  width: 100%;
+  height: 400px;
+  border-radius: var(--p);
+}
+nav button{
+  display: block;
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  background-color: #00CC96;
+  padding: 20px 40px;
+  border: 1px solid #00CC96;
+  border-radius: var(--p);
+  font-weight: bold;
+  cursor: pointer;
+  transition: .1s linear;
+ 
+}
+.cart{
+  margin-top: 30px;
+}
+nav button:hover{
+  opacity: .8;
+}
+.viewless{
+  display: none;
+}
+.added{
+  margin-top: 10px;
+  background-color: #91c58a;
+  text-align: center;
+}
+
+.yellow h4{ 
+  background-color: rgb(255, 255, 212);
+  color: rgb(255, 178, 11) !important;
+}
+.blue h4{
+  background-color: lightcyan;
+  color: rgb(96, 120, 255) !important;
+}
+.pink h4{
+  background-color: rgb(252, 217, 222);
+  color: palevioletred !important;
+}
+.green h4{
+  background-color: rgb(204, 250, 204);
+  color: forestgreen !important;
+}
+.up{
+  position: fixed;
+  display: block;
+  background-color: #00CC96;
+  color: white;
+  padding: 10px;
+  border-radius: var(--p);
+  right: 20px;
+  bottom: 20px;
+  font-size: 25px;
+  z-index: 9999;
+}
+.sale{
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: var(--p);
+  border: 2px solid white;
+  right: 0;
+  top:30px;
+}
+
+.sl>a{
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: var(--p);
+}
+.heart1{
+  font-size: 40px;
+}
+.heart1:hover{
+  color:red;
+}
+.heart2{
+  font-size: 40px;
+  color: red;
+}
+.heart2:hover{
+  color: black;
+}
+
+/*BLOG*/
+.preview{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  z-index: 9999;
+  justify-content: center;
+}
+
+.preview img{
+  width: 400px;
+  height: 400px;
+}
+.left img{
+  border-radius: var(--p);
+}
+.preview .right{
+  background-color: white;
+  padding: 100px;
+  border-radius: var(--p);
+}
+.del{
+  font-size: 25px;
+  position: absolute;
+  right:250px;
+  top:30px;
+  border-radius: var(--p);
+  padding: 10px;
+}
+.del:hover{
+  background-color: rgb(236, 129, 129);
+  transform: rotate(20deg);
+}
+.product-detail {
+  text-align: center;
+}
+
+.big-image {
+  margin-bottom: 20px;
+}
+
+.big-image img {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnails .thumbnail {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.thumbnails .thumbnail:hover {
+  transform: scale(1.1);
+}
+.blogs img{
+  border-radius: var(--p) var(--p);
+  height: 400px;
+}
+
+.blog{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.left{
+  padding-right: 100px;
+}
+.left:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.right:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.blog h4{
+  text-align: center;
+  color: palevioletred;
+  background-color: hsl(352, 69%, 87%);
+}
+.viewall{
+  text-align: center;
+}
+nav.letter{
+  box-sizing: border-box;
+  display: grid;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input .Email{
+  font-size: 25px;
+  width: 60%;
+  padding: 20px;
+  border-radius: var(--p);
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #e5e7e7;
+  border: 1px solid #e6e7e7;
+}
+.input{
+  margin-top:20px ;
+  margin-bottom: 20px;
+}
+.input .feedback{
+  font-size: 25px;
+  width: 60%;
+  height: 100px;
+  padding: 20px;
+  border-radius: var(--p);
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #e5e7e7;
+  border: 1px solid #e6e7e7;
+  margin-top: 10px;
+}
+.input>p{
+  font-size: 25px;
+  background-color: rgb(196, 235, 196);
+  border-radius:var(--p) ;
+  margin: 10px;
+}
+/* about us */
+.about-us_item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us_item_title {
+  text-align: center;
+}
+
+.about-us_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us_icon {
+flex: 1;
+padding: 40px;
+border: none;
+color: #333;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us_icon:hover {
+transform: translateY(-10px);
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.review.show {
+opacity: 1;
+}
+
+.about-us_icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 50px; /* Khoảng cách phía trên nếu cần */
+}
+.review-container {
+  box-sizing: border-box;
+  display: grid;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.review-header:first-child{
+font-style: italic;
+color: rgba(55, 111, 231, 0.808);
+}
+
+.review-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.review-content {
+position: relative;
+height: 250px;
+overflow: hidden; /* Giữ các review bên trong khung nhìn */
+  display: flex;
+  flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+  align-items: center; 
+}
+.review {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: all 0.5s ease-in-out;
+}
+
+.review.active {
+left: 0; /* Đưa review vào khung nhìn */
+opacity: 1; /* Hiển thị review */
+}
+
+.review.exit {
+left: -100%; /* Đưa review ra ngoài khung nhìn bên trái */
+opacity: 0;
+}
+
+
+.review-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #5bc49f;
+}
+
+.review-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-text h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.2; /* Tăng line-height để căn chỉnh tốt hơn */
+}
+
+.review-text p {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+  max-width: 80%;
+  line-height: 1.5; /* Tăng line-height để căn chỉnh tốt hơn */
+}
+
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: scale(1.2);
+}
+/* footer */
+footer {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  flex-wrap: wrap;
+}
+
+.logo img{
+  width: 140px;
+  margin-top: none;
+  margin-bottom: 20px;
+}
+  
+
+.footer-content1{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+  padding:20px;
+}
+
+footer ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-icons a,
+.settings-icon a {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.social-icons a:hover,
+.settings-icon a:hover {
+  color: #666;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 20px;
+}
